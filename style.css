@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #ded7d4;
+}
+header {
+    background: #ff5200;
+    padding: 20px 4%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+header h2 {
+    color: #fbfbfb;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+}
+
+
+.hero {
+    background: #fc8019;
+    color: white;
+    text-align: center;
+    padding: 80px 10px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+input {
+    padding: 12px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 20px;
+    background: #282c3f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.services, .food {
+    padding: 50px 4%;
+    text-align: center;
+}
+.services .card img {
+    display: block;
+    width: 100%;
+    height: 130px;
+    margin: 12px auto 0;
+    object-fit: contain;
+}
+
+.services h2, .food h2 {
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #e96d07;
+    padding: 35px 20px;
+    border-radius: 10px;
+    width: 220px;
+}
+
+
+.card p {
+    margin-top: 12px;
+}
+
+footer {
+    background: #282c3f;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
